@@ -1,7 +1,10 @@
 package br.com.dio.desafio.dominio;
 
+import lombok.ToString;
+
 import java.time.LocalDate;
 
+@ToString(callSuper = true)
 public class Mentoria extends Conteudo{
 
     private LocalDate data;
@@ -22,12 +25,12 @@ public class Mentoria extends Conteudo{
         this.data = data;
     }
 
-    @Override
-    public String toString() {
-        return "Mentoria{" +
-                "titulo='" + getTitulo() + '\'' +
-                ", descricao='" + getDescricao() + '\'' +
-                ", data=" + data +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "Mentoria{" +
+//                "titulo='" + getTitulo() + '\'' +
+//                ", descricao='" + getDescricao() + '\'' +
+//                ", data=" + data +
+//                '}';
+//    }
 }
